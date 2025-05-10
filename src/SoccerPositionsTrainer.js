@@ -627,9 +627,10 @@ const SoccerPositionsTrainer = () => {
           <div className="relative mb-4">
             {/* Soccer Field with fixed height */}
             <div 
-              ref={fieldRef}
-              className={`${getFieldWidth()} mx-auto h-64 bg-green-500 rounded-lg overflow-hidden border-2 border-white relative`}
-              onClick={handleFieldClick}
+            ref={fieldRef}
+            className={`${getFieldWidth()} mx-auto h-96 bg-green-500 rounded-lg overflow-hidden border-2 border-white relative`}
+            style={{ aspectRatio: '3/4' }}
+            onClick={handleFieldClick}
             >
               {/* Field markings */}
               <div className="absolute h-full w-full border-2 border-white"></div>
